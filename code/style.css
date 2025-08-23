@@ -1,0 +1,527 @@
+body {
+    margin: 0px;
+    background-color: #fdfdfd;
+    background: url(images/green-grad.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+    
+}
+
+
+
+.nav {
+    width: 90%;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.nav .logo {
+    display: inline-flex;
+    padding: 1em;
+}
+
+.nav .logo img {
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    border: none;
+}
+.nav .logo h1 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+
+.nav .logo h1 span {
+    color: #29940c
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    padding: 1.5em;
+    
+}
+
+.nav ul li {
+    margin-right: 2.5em;
+    
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #212A37;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    
+
+}
+
+.nav button {
+    padding: 1em 2em;
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 400;
+    text-align: center;        
+}
+
+.nav .login {
+    background: transparent;
+    border: none;
+    font-size: 0.8rem;
+}
+
+.nav .signup {
+    color: #212124;
+    width: 130px;
+    background-color: #5ced6b;
+    border: none;
+    border-radius: 1.2em;
+    font-size: 0.8rem;
+}
+
+
+
+.hero-content {
+    text-align: center;
+    
+}
+
+.hero-content h2 {
+    font-weight: 300 bold;
+    font-family: "Exo 2", sans-serif;
+    font-size: 35px;
+    
+    
+}
+
+.hero-content p {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 350;
+}
+
+.hero-content button {
+    padding: 1em 2em;
+    margin-top: 1em;
+    border: none;
+    border-radius: 20px;
+    background-color: #5ced6b;
+    font-family: "Exo 2", sans-serif;
+    
+}
+
+.hero-image {
+    display: block;
+    position: relative;
+}
+
+.hero-image img {
+    position: relative;
+    mix-blend-mode: multiply;
+    height: 400px;
+    width: auto;
+    margin-top: -30px;
+}
+
+.banking-options {
+    position: relative;
+    width: 100%;
+    
+}
+
+
+
+.banking-options h2 {
+    text-align: center;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.banking-options .a-line {
+    border-bottom: 0.5px solid black;
+    display: none;
+
+}
+
+.banking-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 10px 0;
+    width: 100%;
+}
+
+.banking-grid .account-content {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.account-content:hover {
+    transform: translateY(-20px);
+}
+
+.account-content img {
+    z-index: 0;
+    border-radius: 15px;
+    width: 100%;
+}
+.blur {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 15px;
+}
+
+
+.account-content .text-container {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: #212A37;
+    z-index: 2;
+    font-family: "Exo 2", sans-serif;
+
+}
+
+.account-content .text-container h3 {
+    font-weight: 500;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+.account-content .text-container p {
+    font-size: 17px;
+}
+
+.about-us {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    width: 100%;
+    margin: 40px 20px;
+}
+
+.about-us .about-text {
+    display: block;
+    width: 100%;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.about-text h2 {
+    color: #29940c;
+    font-size: 1.4rem;
+}
+
+.about-text p {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.about-hero {
+    display: block;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.about-hero img {
+    width: auto;
+    height: auto;
+    position: relative;
+    mix-blend-mode: multiply;
+    border-radius: 30px;
+    box-shadow: 20px 20px rgba(34, 33, 33, 0.1);
+     
+}
+
+.reasons-list {
+    margin-top: 50px;
+}
+ 
+.reasons-list h1 {
+    margin: 30px 0;
+    text-align: center;
+    color: #29940c;
+    font-family: "Exo 2", sans-serif;
+}
+ 
+
+.reasons-list .card {
+  width: 300px;
+  height: 150px;
+  padding: 24px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 20px 20px rgba(34, 33, 33, 0.08);
+  margin: 50px auto;
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.reasons-list .card:hover {
+    transform: translateY(-20px);
+}
+.reasons-list .card h2 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #2d3748;
+border-bottom: 1px solid black;
+   width: auto;
+   margin: 10px 10px
+}
+
+
+
+.reasons-list .card p {
+  margin: 0;
+  color: #4a5568;
+  font-family: "Exo 2", sans-serif;
+}
+
+footer {
+    background: url(images/footer-ground.jpg);
+    
+}
+.footer-nav {
+    width: 90%;
+    margin-top: 1px;
+    margin-right: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.footer-nav .logo {
+    display: inline-flex;
+    padding: 15px;
+}
+
+.footer-nav .logo img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+}
+.footer-nav .logo h1 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    
+}
+
+.footer-nav .logo h1 span {
+    color: #29940c
+}
+
+.footer-nav h2 {
+    font-family: "Montserrat" , sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin-left: 35px;
+    color: rgb(243, 240, 240);
+}
+
+.footer-nav ul {
+    list-style: none;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: #212A37;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgb(rgb(110, 107, 107), green, blue);  
+}
+
+/* ...existing code... */
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .nav {
+        width: 100%;
+        padding: 0.5em;
+    }
+    .nav ul {
+        padding: 1em;
+    }
+    .banking-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-us {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 30px 10px;
+    }
+    .about-hero {
+        margin-left: 0;
+    }
+    .reasons-list .card {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5em 0.5em;
+    }
+    .nav .logo {
+        padding: 0.5em 0;
+        width: auto;
+        
+    }
+    .nav ul {
+        flex-direction: column;
+        /* padding: 0.5em 0; */
+        /* width: 100%; */
+    }
+    .nav ul li {
+        font-size: 0.5rem;
+        margin: 0.5em 0;
+        margin-right: 0;
+    }
+    .nav button {
+        margin: 0.5em 0;
+    }
+    .hero-content h2 {
+        margin-top: 2em;
+        font-size: 24px;
+    }
+    .hero-content p {
+        font-size: 1rem;
+        margin: 0 1em;
+    }
+    .hero-image img {
+        height: 100%;
+        margin-top: -10px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .banking-grid {
+        grid-template-columns: 1fr;
+        margin: 1em 0;
+        width: 100%;
+    }
+
+    .banking-options .a-line {
+    border-bottom: 0.05px dashed black;
+    display: block;
+
+   }
+    .banking-grid .account-content {
+        width: 85%;
+        margin: 2em;
+        transition: transform 0.3s ease;
+    }
+    .account-content:focus {
+    transform: translateY(-20px);
+    }
+    .account-content .text-container {
+        top: 10%;
+        left: 5%;
+        font-size: 16px;
+        width: 90%;
+    }
+    .about-us {
+        grid-template-columns: 1fr;
+        gap: 1.3em;
+        margin: 1.3em 0;
+        justify-content: center;
+    }
+   
+    .about-text {
+        font-size: 0.5rem;
+        margin: 0 0.2em;
+    }
+    .about-hero img {
+        margin: 0 2em;
+        width: 80%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 10px 10px rgba(34, 33, 33, 0.1);
+    }
+    .reasons-list .card {
+        width: 50%;
+        height: auto;
+        padding: 1em 1em;
+        margin: 20px auto;
+        transition: transform 0.3s ease;
+    }
+    .reasons-list .card:focus {
+        transform: translateY(-20px);
+
+    }
+    .footer-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .footer-nav .logo {
+        padding: 0.5em 0;
+    }
+    .footer-nav ul {
+        margin-left: 1em;
+    }
+    .footer-nav ul li {
+        margin-bottom: 8px;
+    }
+}
+
+/* Ensure blur and text overlays remain layered and visible */
+/* .banking-grid .account-content {
+    position: relative;
+}
+.account-content img {
+    z-index: 0;
+    border-radius: 15px;
+    width: 100%;
+}
+.blur {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 15px;
+}
+.account-content .text-container {
+    position: absolute;
+    z-index: 2;
+    color: #212A37;
+    font-family: "Exo 2", sans-serif;
+ 
+} */
+
