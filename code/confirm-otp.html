@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Confirm OTP | First Unity Credit Union</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="confirm-otp.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100..400&family=Montserrat:wght@100..500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="otp-container">
+    <div class="otp-card">
+      <div class="otp-logo">
+        <img src="images/main-logo.png" alt="First Unity Logo" />
+        <h1>First <span>Unity</span> Credit <span>Union</span></h1>
+      </div>
+      <h2>Confirm OTP</h2>
+      <p class="otp-desc">Enter the 5-digit code sent to your email or phone.</p>
+      <form class="otp-form" id="otpForm" autocomplete="off">
+        <label for="otp">OTP Code</label>
+        <input type="text" id="otp" name="otp" maxlength="5" placeholder="Enter OTP" required />
+        <button type="submit" id="confirmBtn">Confirm OTP</button>
+      </form>
+      <p id="otp-message"></p>
+    </div>
+  </div>
+  <script src="confirm-otp.js"></script>
+</body>
+</html>

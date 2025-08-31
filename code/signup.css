@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", "Montserrat", sans-serif;
+  background: url(images/green-grad.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+.signup-card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(41,148,12,0.08);
+  padding: 2.5em 2em 2em 2em;
+  max-width: 370px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.signup-logo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+  border: none;
+}
+
+.signup-logo h1 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Exo 2", sans-serif;
+}
+
+.signup-logo h1 span {
+  color: #29940c;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1em 0 0.5em 0;
+  color: #212A37;
+}
+
+.signup-desc {
+  font-size: 1em;
+  color: #4a5568;
+  margin-bottom: 1.5em;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.signup-form label {
+  text-align: left;
+  font-size: 0.95em;
+  color: #212A37;
+  margin-bottom: 0.2em;
+}
+
+.signup-form input {
+  padding: 0.8em;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  background: #f7fafc;
+  transition: border 0.2s;
+}
+
+.signup-form input:focus {
+  border: 1.5px solid #29940c;
+  outline: none;
+}
+
+.signup-form button {
+  padding: 0.9em;
+  border-radius: 1.2em;
+  border: none;
+  background: #5ced6b;
+  color: #212124;
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.signup-form button:hover {
+  background: #29940c;
+  color: #fff;
+}
+
+.signup-links {
+  margin-top: 0.5em;
+  font-size: 0.95em;
+  color: #212A37;
+}
+
+.signup-links a {
+  color: #29940c;
+  text-decoration: none;
+  margin-left: 0.5em;
+  transition: text-decoration 0.2s;
+}
+
+.signup-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .signup-card {
+    padding: 1.5em 0.7em;
+    max-width: 98vw;
+  }
+  .signup-logo h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+}
